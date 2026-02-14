@@ -23,3 +23,7 @@ app.post("/", (req, res) => {
   res.status(201).json(tasks);
   console.log("task created");
 });
+app.delete("/", (req, res) => {
+  tasks.pop();
+  console.log(tasks);
+});
